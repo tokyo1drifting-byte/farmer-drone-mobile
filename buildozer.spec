@@ -246,6 +246,9 @@ warn_on_root = 1
 # (str) Python version to use for the build (must be available in your PATH)
 # python.version = 3.10
 
+# (str) p4a branch to use (use stable branch for known working recipes)
+p4a.branch = master
+
 # (str) Path to a custom recipe directory
 # custom_recipes_dir =
 
