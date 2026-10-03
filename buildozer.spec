@@ -31,8 +31,8 @@ version = 1.0.0
 # (list) Application requirements
 # comma separated e.g. requirements = sqlite3,kivy
 # Using python-for-android (p4a) recipe names - these will be built from source for Android
-# Use versions known to work with p4a recipes
-requirements = python3,kivy==2.1.0,pyjnius==1.4.2,android,openssl,certifi,charset_normalizer
+# Let kivy pull pyjnius, android as dependencies
+requirements = python3,kivy==2.1.0
 
 # (str) Custom source folders for requirements
 # Sets custom source for any requirements with recipes
