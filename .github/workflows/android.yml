@@ -33,7 +33,7 @@ jobs:
 
       - name: Accept Android SDK licenses
         run: |
-          yes | sdkmanager --licenses || true
+          yes | sudo $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
         env:
           ANDROID_SDK_ROOT: /root/.buildozer/android/platform/android-sdk
 
