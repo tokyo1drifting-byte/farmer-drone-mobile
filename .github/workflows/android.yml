@@ -33,7 +33,14 @@ jobs:
 
       - name: Accept Android SDK licenses
         run: |
-          yes | sudo $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses || true
+          sudo apt-get update && sudo apt-get install -y expect
+          expect -c "
+            spawn $ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager --licenses
+            expect {
+                \"Accept?\" { send \"y\r\"; exp_continue }
+                eof
+            }
+          " || true
         env:
           ANDROID_SDK_ROOT: /root/.buildozer/android/platform/android-sdk
 
