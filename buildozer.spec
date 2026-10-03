@@ -125,7 +125,7 @@ android.permissions = INTERNET,WRITE_EXTERNAL_STORAGE,READ_EXTERNAL_STORAGE
 android.enable_androidx = True
 
 # (str) Kotlin version to use
-# android.kotlin_version = 1.6.10
+android.kotlin_version = 1.6.10
 
 # (bool) If True, then skip trying to update the Android sdk
 # This can be useful to avoid long downloads on a slow connection
@@ -155,12 +155,6 @@ android.enable_androidx = True
 
 # (list) Gradle dependencies to add
 # android.gradle_dependencies =
-
-# (bool) Enable AndroidX support
-android.enable_androidx = True
-
-# (str) Kotlin version to use
-# android.kotlin_version = 1.6.10
 
 #
 # iOS specific
